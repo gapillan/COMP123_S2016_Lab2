@@ -15,14 +15,15 @@ namespace COMP123_S2016_Lab2
     public class Person
     {
         // PRIVATE INSTANCE VARAIABLES 
-        private string _name; 
+        private string _name;
+        private int _age;
 
         // PUBLIC PROPERTIES 
 
         /**
          * <summary>
          * This is a property for our _name field 
-         * 
+         * </summary>
          * @property {string} Name
          */
         public string Name 
@@ -34,9 +35,12 @@ namespace COMP123_S2016_Lab2
 
             set 
             {
+                //Console.WriteLine("_name value set");
                 this._name = value; 
             }
         }
+
+        public int Age { get; set; } 
 
         /**
          * <summary>
@@ -46,7 +50,8 @@ namespace COMP123_S2016_Lab2
          */
         public Person() 
         {
-            this._name = "unknown name!";
+            this.Name = "unknown name!";
+            //this._name = "unknown name!";
         }
 
         /**
@@ -59,7 +64,7 @@ namespace COMP123_S2016_Lab2
          */
         public Person(string name)
         {
-            this._name = name;
+            this.Name = name;
         }
 
         /**
@@ -69,9 +74,9 @@ namespace COMP123_S2016_Lab2
          * @method _sayHello() 
          * @returns {void}
          */
-        private void _sayHello() 
+        public void SaysHello() 
         {
-            Console.WriteLine(this._name + " says Hello!" );
+            Console.WriteLine(this.Name + " says Hello!" );
         }
     }
 }

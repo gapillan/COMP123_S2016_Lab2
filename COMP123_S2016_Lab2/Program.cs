@@ -25,11 +25,13 @@ namespace COMP123_S2016_Lab2
             // create a new instance of the Person class
             Person person = new Person("Pam");
 
+            person.SaysHello();
+
             // set a value in the Name property of the Person class
             //person.Name = "Pam";
 
             // get the Name value and print to console
-            Console.WriteLine(person.Name);
+            //Console.WriteLine(person.Name);
         }
     }
 }
