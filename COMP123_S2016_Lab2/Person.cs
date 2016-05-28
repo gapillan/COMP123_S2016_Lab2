@@ -102,7 +102,17 @@ namespace COMP123_S2016_Lab2
             this.Name = "unknown name";
             this.Age = age;
         }
-
+        /**
+         * <summary>
+         * This is a constructor that takes both name and age as paramters. 
+         * It assigns the local name value to the Name property.
+         * It assigns the local age value to the Age property.
+         * </summary>
+         * 
+         * @constructor Person 
+         * @param {string} name 
+         * @param {int} age 
+         */
         public Person(string name, int age) 
         {
             this.Name = name;
