@@ -14,15 +14,15 @@ namespace COMP123_S2016_Lab2
      */
     public class Person
     {
-        // PRIVATE INSTANCE VARAIABLES 
+        // PRIVATE INSTANCE VARAIABLES ++++++++++++++++++++++++++++++++++++
         private string _name;
         private int _age;
 
-        // PUBLIC PROPERTIES 
+        // PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++
 
         /**
          * <summary>
-         * This is a property for our _name field 
+         * This is a public property for our private _name field 
          * </summary>
          * @property {string} Name
          */
@@ -40,7 +40,26 @@ namespace COMP123_S2016_Lab2
             }
         }
 
-        public int Age { get; set; } 
+        /** 
+         * <summary>
+         * This is a public property for our private _age field
+         * </summary>
+         * @property {int} Age
+         */
+        public int Age 
+        {
+            get 
+            {
+                return this._age;
+            }
+
+            set 
+            {
+                this._age = value; 
+            }
+        } 
+
+        // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++
 
         /**
          * <summary>
@@ -67,16 +86,32 @@ namespace COMP123_S2016_Lab2
             this.Name = name;
         }
 
+        // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++
+
         /**
          * <summary>
          * This method outputs the _name value with " says Hello!" to the console.
          * </summary>
-         * @method _sayHello() 
+         * @method SaysHello() 
          * @returns {void}
          */
         public void SaysHello() 
         {
             Console.WriteLine(this.Name + " says Hello!" );
+        }
+
+        /**
+         * <summary>
+         * This method outputs the _name and _age values in the following
+         * format: _name + " is " + this.Age " years old".
+         * </summary>
+         * 
+         * @method ShowAge 
+         * @returns {void}
+         */
+        public void ShowAge() 
+        {
+            Console.WriteLine(this.Name + " is " + this.Age);
         }
     }
 }
