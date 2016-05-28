@@ -29,6 +29,8 @@ namespace COMP123_S2016_Lab2
             dan.SaysHello();
             dan.ShowAge();
 
+            Console.WriteLine();
+
             Person pam = new Person("Pamela");
             pam.Age = 21;
             pam.SaysHello();
@@ -46,12 +48,6 @@ namespace COMP123_S2016_Lab2
             Person apes = new Person("April", 23);
             apes.SaysHello();
             apes.ShowAge(); 
-
-            // set a value in the Name property of the Person class
-            //person.Name = "Pam";
-
-            // get the Name value and print to console
-            //Console.WriteLine(person.Name);
         }
     }
 }

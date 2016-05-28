@@ -69,10 +69,7 @@ namespace COMP123_S2016_Lab2
          */
         public Person() 
         {
-            //initialize public properties 
-            this.Name = "unknown name!";
-            this.Age = 0;
-            //this._name = "unknown name!";
+            this._initialize();
         }
 
         /**
@@ -118,6 +115,26 @@ namespace COMP123_S2016_Lab2
             this.Name = name;
             this.Age = age;
         }
+        
+        // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++
+
+        /**
+         * <summary>
+         * This method initializes the public properties Name and Agge 
+         * </summary>
+         * 
+         * @private 
+         * @method _initialize 
+         * @returns {void}
+         */
+        private void _initialize()
+        {
+            this.Name = "unknown name!";
+            this.Age = 0;
+        }
+
+
+
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++
 
