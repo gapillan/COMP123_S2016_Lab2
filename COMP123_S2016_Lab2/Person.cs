@@ -69,7 +69,9 @@ namespace COMP123_S2016_Lab2
          */
         public Person() 
         {
+            //initialize public properties 
             this.Name = "unknown name!";
+            this.Age = 0;
             //this._name = "unknown name!";
         }
 
@@ -84,6 +86,27 @@ namespace COMP123_S2016_Lab2
         public Person(string name)
         {
             this.Name = name;
+            this.Age = 0;
+        }
+
+        /**
+         *<summary> 
+         *This is a constructor that takes age as a parameter and passes
+         *it to the _age private instance variable 
+         *</summary> 
+         *@constructor Person 
+         *@param {int} age
+         */
+        public Person(int age) 
+        {
+            this.Name = "unknown name";
+            this.Age = age;
+        }
+
+        public Person(string name, int age) 
+        {
+            this.Name = name;
+            this.Age = age;
         }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++
